@@ -31,7 +31,6 @@ def courses(term_id, subject_code):
 all_terms=list(reversed((sorted(terms(), key=lambda x: x["start_date"])))) # sort the json of all terms by their start date, reverse the order so most recent appears earliest, turn into list
 
 latest_term_id=all_terms[0]["id"] # get unique id of the latest term
-
 all_subjects=subjects(latest_term_id) # get json of all subjects offered for the latest term
 
 subject_codes=[] # create a list of all the subject codes
